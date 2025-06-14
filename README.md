@@ -1,6 +1,6 @@
-# 🚀 Backend Developer Assignment - Future Code Technology
+# 🚀 Backend Developer Assignment - Futurec Technology
 
-This is a RESTful API built using **Node.js**, **Express**, and **MongoDB** as part of the backend developer assignment for Future Code Technology.
+This is a RESTful API built using **Node.js**, **Express**, and **MongoDB** as part of the backend developer assignment for Futurec Technology.
 
 ---
 
