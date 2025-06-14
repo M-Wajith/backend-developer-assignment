@@ -25,13 +25,41 @@ This is a RESTful API built using **Node.js**, **Express**, and **MongoDB** as p
 
 ## 📂 Project Structure
 
+config/
+controllers/
+models/
+postman/ # Postman screenshots here
+routes/
+.env
+package.json
+package-lock.json
+server.js
+
+---
+
+## ⚙️ Setup Instructions
+
+### Prerequisites
+
+- Node.js (v14+ recommended)
+- MongoDB (local or Atlas cluster)
+
+### Steps
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/M-Wajith/backend-developer-assignment.git
+cd backend-developer-assignment
+
+
 Install dependencies:
 
 bash
 Copy
 Edit
 npm install
-Create a .env file in the root folder and add your MongoDB connection string:
+Create a .env file in the root folder and add your MongoDB connection string and port:
 
 ini
 Copy
@@ -44,21 +72,43 @@ bash
 Copy
 Edit
 npm start
-The server will start on the port specified in .env (default 5000).
+The server will start on the port specified in .env (default: 5000).
 
-API Endpoints
+📡 API Endpoints
 User Routes
-POST /api/users/register - Register a new user
-
-POST /api/users/login - User login
+Method	Endpoint	Description
+POST	/api/users/register	Register a new user
+POST	/api/users/login	User login
 
 Product Routes
-POST /api/products - Create a new product
+Method	Endpoint	Description
+POST	/api/products	Create a new product
+GET	/api/products	Get all products
+GET	/api/products/:id	Get product by ID
+PUT	/api/products/:id	Update a product
+DELETE	/api/products/:id	Delete a product
 
-GET /api/products - Get all products
+🧪 Testing with Postman
+You can test all endpoints using Postman. Below are screenshots showing the tested requests and responses:
 
-GET /api/products/:id - Get a product by ID
+### User Registration
+![User Registration](postman/user_registration.png)
 
-PUT /api/products/:id - Update a product
+### User Login
+![User Login](postman/user_login.png)
 
-DELETE /api/products/:id - Delete a product
+### Create Product
+![Create Product](postman/create_product.png)
+
+### Get All Products
+![Get All Products](postman/get_all_products.png)
+
+### Get Product By ID
+![Get Product By ID](postman/get_product_by_id.png)
+
+### Update Product
+![Update Product](postman/update_product.png)
+
+### Delete Product
+![Delete Product](postman/delete_product.png)
+```
